@@ -147,6 +147,15 @@ function repeatString(str, times) {
  *   removeFirstOccurrences('ABABAB', 'BA') => 'ABAB'.
  */
 function removeFirstOccurrences(/* str, value */) {
+  // let firstPart;
+  // let secondPart;
+  // if (str.includes(value)) {
+  //   const startIndex = str.indexOf(value);
+  //   const endIndex = startIndex + value.length;
+  //   firstPart = str.slice(0, startIndex);
+  //   secondPart = str.slice(endIndex);
+  // }
+  // return firstPart.concat(secondPart);
   throw new Error('Not implemented');
 }
 
@@ -193,8 +202,8 @@ function sumOfCodes(/* str */) {
  *   startsWith('Hello World', 'World') => false
  *   startsWith('Hello World', 'Hello') => true
  */
-function startsWith(/* str, substr */) {
-  throw new Error('Not implemented');
+function startsWith(str, substr) {
+  return str.startsWith(substr);
 }
 
 /**
